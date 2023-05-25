@@ -1,27 +1,35 @@
-package Link;
+package DLL;
 
 public class Node {
+
+	Student data ;
+	Node next , prev ;
 	
-	private int data ; 
-	private Node next ; 
+			public Node(Student data) {
+				
+				this.data = data ;
+				next = prev =null;
+			}
 	
-	public Node(int data) {
-		
-		this.data = data ; 
-		this.next = null ;
+	public Student getData() {
+		return data;
 	}
-	
-	public void setData(int data) {
-		this.data = data ;
-	}
-	public int getData() {
-		return data ; 
-	}
-	public void setNext(Node next) {
-		this.next = next ;
+	public void setData(Student data) {
+		this.data = data;
 	}
 	public Node getNext() {
-		return next ;
+		return next;
 	}
-
+	public void setNext(Node next) {
+		this.next = next;
+	}
+	public Node getPrev() {
+		return prev;
+	}
+	public void setPrev(Node prev) {
+		this.prev = prev;
+	}
+	
+	
+	
 }
