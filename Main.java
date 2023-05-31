@@ -1,24 +1,19 @@
-package Q;
+package Statck;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		StaticQueue q = new StaticQueue(5) ;
 		
-		q.enqueue(5);
-		q.enqueue(10);
-		q.enqueue(15);
-		q.enqueue(20);
-		q.enqueue(25);
-		System.out.println("Queue Ellements are");
-		q.Display();
+		Static_Stack s = new Static_Stack(10);
 		
-		int v = q.dequeue();
-		v = q.dequeue();
-		if(v != -1)		
-		System.out.println("deleted element = "+v);
+		s.push(10);
+		s.push(20);
+		s.push(30);
+		s.push(40);
+		s.push(50);
 		
+		s.Display();
 	}
 
 }
