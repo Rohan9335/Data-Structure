@@ -1,19 +1,20 @@
-package Statck;
+package Dynstack;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
 		
-		Static_Stack s = new Static_Stack(10);
+		DynStack s = new DynStack();
 		
-		s.push(10);
-		s.push(20);
-		s.push(30);
-		s.push(40);
-		s.push(50);
+		s.push(1);
+		s.push(2);
+		s.push(3);
+		s.push(4);
+		s.push(5);
 		
 		s.Display();
+
 	}
 
 }
