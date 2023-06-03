@@ -1,20 +1,17 @@
-package Dynstack;
+package Link;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
+			LinkedList l = new LinkedList();
+			l.insertatBeg(1);
+			l.insertatBeg(2);
+			l.insertatBeg(3);
+			l.insertatBeg(4);
+			l.insertatBeg(5);
+			l.Display();
 		
-		DynStack s = new DynStack();
-		
-		s.push(1);
-		s.push(2);
-		s.push(3);
-		s.push(4);
-		s.push(5);
-		
-		s.Display();
-
 	}
 
 }
